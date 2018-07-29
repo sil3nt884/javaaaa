@@ -9,7 +9,7 @@ The goal is to build a URL shortener service similar to the [Google](https://goo
   1. A CRUD one providing endpoints to create, retrieve, update and delete Url objects using JSON format. When a new Url object is created, the destination URL (e.g. http://www.dailymail.co.uk) will be provided in the request. The response will include the full Url object, including the short code used for the redirect, which must be generated automatically by the service and it's a read only property. How the short code is generated is up to you, but obviously the shorter the better, and there should be no chance of collision with other short codes.
   2. Another one with a single endpoint to perform the actual redirection.
 
-Sample requests/responses:
+## Sample requests/responses
 
 ### For CRUD controller:
 
@@ -17,7 +17,7 @@ Sample requests/responses:
 
 `POST /url {"url": "http://www.dailymail.co.uk"}` -> 201 with body `{"id": 123456, "url": "http://www.dailymail.co.uk", "shortCode": "W7E"}`
 
-#### Retrieve
+#### Retrieve
 
 `GET /url/123456` -> 200 with body `{"id": 123456, "url": "http://www.dailymail.co.uk", "shortCode": "W7E"}`
 
