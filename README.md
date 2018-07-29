@@ -9,7 +9,7 @@ The goal is to build a URL shortener service similar to the [Google](https://goo
   1. A CRUD one providing endpoints to create, retrieve, update and delete Url objects using JSON format. When a new Url object is created, the destination URL (e.g. http://www.dailymail.co.uk) will be provided in the request. The response will include the full Url object, including the short code used for the redirect, which must be generated automatically by the service and it's a read only property. How the short code is generated is up to you, but obviously the shorter the better, and there should be no chance of collision with other short codes.
   2. Another one with a single endpoint to perform the actual redirection.
 
-## Sample requests/responses:
+Sample requests/responses:
 
 ### For CRUD controller:
 
@@ -43,4 +43,4 @@ If you're not familiar with Spring Boot or Maven feel free to use any alternativ
 
 Unit tests must be also provided. You can use any testing framework you like and any helper library.
 
-You can submit your code to your own repository that we can access or send it to us packaged in a single file using zip, tar or any other popular archiving format.
+Clone or download this repository to get started. You can submit your code to your own repository that we can access or send it to us packaged in a single file using zip, tar or any other popular archiving format.
