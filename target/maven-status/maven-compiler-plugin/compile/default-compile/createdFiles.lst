@@ -1,0 +1,5 @@
+challenge\repository\URLRepository.class
+challenge\Application.class
+challenge\controllers\RedirectController.class
+challenge\controllers\Api.class
+challenge\entity\URL.class
